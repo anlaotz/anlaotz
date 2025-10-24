@@ -8,10 +8,15 @@
 
 ---
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=anlaotz&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true" height="160" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=anlaotz&layout=compact&langs_count=6&theme=github_dark&hide_border=true" height="160" alt="Top Languages" />
+<div align="center" style="display:flex;justify-content:center;gap:25px;flex-wrap:wrap;">
+  <img src="https://github-readme-stats.vercel.app/api?username=anlaotz&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true" 
+       height="160" 
+       style="border:2px solid transparent;border-radius:12px;background-image:linear-gradient(#0d1117,#0d1117),linear-gradient(135deg,#4f46e5,#06b6d4);background-origin:border-box;background-clip:content-box,border-box;" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=anlaotz&layout=compact&langs_count=6&theme=github_dark&hide_border=true" 
+       height="160"
+       style="border:2px solid transparent;border-radius:12px;background-image:linear-gradient(#0d1117,#0d1117),linear-gradient(135deg,#06b6d4,#9333ea);background-origin:border-box;background-clip:content-box,border-box;" />
 </div>
+
 
 ---
 
