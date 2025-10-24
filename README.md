@@ -7,14 +7,15 @@
 </p>
 
 ---
-<div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+<div align="center" style="backdrop-filter: blur(10px); background-color: rgba(255,255,255,0.03); border-radius: 16px; padding: 20px; display: inline-block;">
   <img src="https://github-readme-stats.vercel.app/api?username=anlaotz&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true" 
-       height="160" alt="GitHub Stats" 
-       style="border-radius: 10px; box-shadow: 0 0 15px rgba(255,255,255,0.05);" />
+       height="160" 
+       style="border-radius: 10px; margin: 10px;" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=anlaotz&layout=compact&langs_count=6&theme=github_dark&hide_border=true" 
-       height="160" alt="Top Languages" 
-       style="border-radius: 10px; box-shadow: 0 0 15px rgba(255,255,255,0.05);" />
+       height="160" 
+       style="border-radius: 10px; margin: 10px;" />
 </div>
+
 
 ---
 
