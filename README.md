@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Anlaotz</h1>
-<h3 align="center">💻 Developer | 🧠 Researcher | 🌍 From Indonesia</h3>
+<h3 align="center">💻 Developer | 🧠 Researcher </h3>
 
 <p align="center">
   Passionate about digital security, open-source tools, and creative coding for social good.  
