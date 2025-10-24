@@ -49,8 +49,3 @@
 - 🧾 **[CekMetadata App](#)** — Flask + ExifTool webapp for extracting metadata & SHA256 hashes  
 - 📊 **[Monitoring Dashboard](#)** — Real-time censorship map & auto-refresh log visualization  
 
----
-
-<p align="center" style="color:#808080;">
-  ✨ <i>“In a world of noise, data tells the truth.”</i> ✨
-</p>
