@@ -49,18 +49,6 @@
 - 🧾 **[CekMetadata App](#)** — Flask + ExifTool webapp for extracting metadata & SHA256 hashes  
 - 📊 **[Monitoring Dashboard](#)** — Real-time censorship map & auto-refresh log visualization  
 
-
-
-
-
----
-
-<br clear="both">
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/anlaotz/anlaotz/output/snake.svg" alt="Snake animation" />
-</div>
-
 ---
 
 <p align="center" style="color:#808080;">
