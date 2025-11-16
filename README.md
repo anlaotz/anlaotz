@@ -1,4 +1,4 @@
-<h1 align="center" style="color:#e0e0e0;">Hi 👋, I'm Anlaotz</h1>
+<h1 align="center" style="color:#e0e0e0;">Hi, I'm Anlaotz</h1>
 <h3 align="center" style="color:#9ba4b5;">Developer • Researcher • Digital Security Enthusiast</h3>
 
 <p align="center" style="color:#a9a9a9;">
