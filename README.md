@@ -18,29 +18,11 @@
 ### 🧠 About Me
 
 - 🔭 Building tools for **digital forensics**, **network transparency**, and **open archiving**  
-- ⚙️ Skilled in **Python**, **Bash**, **Go**, and **Tailwind**  
+- ⚙️ Skilled in **Python**, and **Bash**
 - 🧩 Experienced in **container-based deployment** (Podman / Docker) and **data visualization**  
 - 🌱 Currently exploring **AI-assisted analysis**, **metadata pipelines**, and **intranet dashboards**  
 - 🎯 Goal: Make open-source infrastructure accessible for everyone  
 
----
-
-<img align="right" alt="coding" height="180" src="https://i.imgur.com/YxO1mwj.gif" />
-
-### ⚡ Tech Stack
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="35" alt="Python" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="35" alt="Go" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="35" alt="Bash" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="35" alt="HTML5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="35" alt="CSS3" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="35" alt="JavaScript" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="35" alt="Docker" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="35" alt="Linux" />
-</div>
-
----
 
 ### 🔍 Highlight Projects
 
