@@ -43,7 +43,7 @@
 
 ## 🧰 Tech Stack
 
-**Languages & Tools:**
+**Languages & Tools:**  
 Python • Bash • Docker/Podman • Flask • FastAPI • SQLite • GitHub Actions
 
 **Focus Areas:**  
