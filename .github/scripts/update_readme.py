@@ -19,15 +19,17 @@ SECTIONS = {
 }
 
 def fetch_latest_repos(g, limit=5):
+    user = g.get_user(USERNAME)
     repos = sorted(
-        [r for r in g.get_user(USERNAME).get_repos() if not r.fork],
+        [r for r in user.get_repos() if not r.fork],
         key=lambda r: r.pushed_at or r.created_at,
         reverse=True
     )
     return repos[:limit]
 
 def fetch_events(g, limit=5):
-    events = g.get_user(USERNAME).get_events()
+    user = g.get_user(USERNAME)
+    events = user.get_events()
     result = []
     for e in events[:limit]:
         if e.type == "PushEvent":
@@ -36,13 +38,25 @@ def fetch_events(g, limit=5):
             result.append(f"🐛 Issue on **{e.repo.name}**")
         elif e.type == "PullRequestEvent":
             result.append(f"🔀 PR on **{e.repo.name}**")
+        else:
+            # fallback generic
+            result.append(f"📦 {e.type} on **{e.repo.name}**")
+    if not result:
+        result.append("No recent public GitHub activity.")
     return result
 
 def replace_section(content, section_name, items):
-    block = "\n".join(items)
     sec = SECTIONS[section_name]
-    pattern = re.compile(f"{sec['start']}.*?{sec['end']}", re.DOTALL)
-    replacement = f"{sec['start']}\n{block}\n{sec['end']}"
+    start = sec["start"]
+    end = sec["end"]
+
+    if start not in content or end not in content:
+        print(f"⚠️ Section markers for {section_name} not found in README.")
+        return content
+
+    block = "\n".join(items)
+    pattern = re.compile(f"{re.escape(start)}.*?{re.escape(end)}", re.DOTALL)
+    replacement = f"{start}\n{block}\n{end}"
     return pattern.sub(replacement, content)
 
 def main():
@@ -55,24 +69,27 @@ def main():
     with open(README_PATH, "r", encoding="utf-8") as f:
         readme = f.read()
 
-    # update highlight project
+    original = readme
+
+    # Highlight projects
     latest = fetch_latest_repos(g)
     repos_text = [
         f"- **[{r.name}]({r.html_url})** — {r.description or '(no description)'}"
         for r in latest
     ]
     repos_text.append(f"\n_Last update: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}_")
+    readme = replace_section(readme, "HIGHLIGHT", repos_text)
 
-    updated = replace_section(readme, "HIGHLIGHT", repos_text)
-
-    # update recent activity
+    # Recent activity
     acts = fetch_events(g)
-    updated = replace_section(updated, "ACTIVITY", [f"- {a}" for a in acts])
+    readme = replace_section(readme, "ACTIVITY", [f"- {a}" for a in acts])
 
-    with open(README_PATH, "w", encoding="utf-8") as f:
-        f.write(updated)
-
-    print("README updated.")
+    if readme == original:
+        print("ℹ️ README not changed (maybe markers missing or no new data?).")
+    else:
+        with open(README_PATH, "w", encoding="utf-8") as f:
+            f.write(readme)
+        print("✅ README updated.")
 
 if __name__ == "__main__":
     main()
