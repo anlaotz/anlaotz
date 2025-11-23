@@ -2,9 +2,9 @@ name: Auto Update README
 
 on:
   schedule:
-  - cron: "0 * * * *" # update setiap 1 jam
+  - cron: "0 * * * *" # tiap jam
   workflow_dispatch:
-    # bisa dijalankan manual
+
 
 jobs:
   update:
