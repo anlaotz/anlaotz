@@ -1,6 +1,7 @@
 # Hi, I'm Anlaotz
 
 <p align="center">
-  <img src="https://github-readme-stats-anlaotz.vercel.app/api?username=anlaotz&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true" height="160" alt="GitHub Stats"/>
-  <img src="https://github-readme-stats-anlaotz.vercel.app/api/top-langs/?username=anlaotz&layout=compact&langs_count=6&theme=github_dark&hide_border=true" height="160" alt="Top Languages"/>
+  <img src="https://raw.githubusercontent.com/anlaotz/anlaotz/master/profile-summary-card-output/github_dark/0-profile-details.svg" alt="GitHub Profile Details"/>
+  <img src="https://raw.githubusercontent.com/anlaotz/anlaotz/master/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Repos per Language"/>
+  <img src="https://raw.githubusercontent.com/anlaotz/anlaotz/master/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Most Commit Language"/>
 </p>
